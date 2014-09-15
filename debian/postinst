@@ -19,7 +19,7 @@ set -e
 
 
 VERSION=0.66
-PRIORITY=50
+PRIORITY=51
 BASEPATH="/usr/share/circos${VERSION}/bin"
 EXECUTABLES="circos gddiag"
 
@@ -31,7 +31,6 @@ case "$1" in
             # Note VERSION is in BASEPATH, not at the end of EXECUTABLE
             VERSIONED_EXE="${BASEPATH}/${e}"
             update-alternatives --install ${BARE_EXE} ${e} ${VERSIONED_EXE} ${PRIORITY}
-            ln -s ${VERSIONED_EXE} ${BARE_EXE}${VERSION}
         done
     ;;
 

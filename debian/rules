@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 PACKAGE=$(shell dh_listpackages)
+VERSION=$(shell head -n1 debian/changelog | perl -ne '/\((\S+)-\d+\)/; print $$1;' )
 
 %:
 	dh $@
@@ -17,3 +18,6 @@ override_dh_auto_install:
 	for DIR in bin error etc example fonts gddiag.png lib tiles data ; \
 	  do cp -a $${DIR} ./debian/$(PACKAGE)/usr/share/$(PACKAGE); \
 	done
+	mkdir -p ./debian/$(PACKAGE)/usr/bin/
+	ln -sf /usr/share/$(PACKAGE)/bin/circos ./debian/$(PACKAGE)/usr/bin/circos$(VERSION)
+	ln -sf /usr/share/$(PACKAGE)/bin/gddiag ./debian/$(PACKAGE)/usr/bin/gddiag$(VERSION)
