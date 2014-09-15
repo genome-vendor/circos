@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+PACKAGE=$(shell dh_listpackages)
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	if [ -d ./debian/$(PACKAGE)/usr/share/$(PACKAGE) ]; then \
+	  rm -rf ./debian/$(PACKAGE)/usr/share/$(PACKAGE) ; \
+	fi
+	install -d ./debian/$(PACKAGE)/usr/share/$(PACKAGE)
+	for FILE in CHANGES CITATION INSTALL \
+	README README.tools README.tutorials README.windows SUPPORT TODO ; \
+	  do install $${FILE} ./debian/$(PACKAGE)/usr/share/$(PACKAGE); \
+	done;
+	for DIR in bin error etc example fonts gddiag.png lib tiles data ; \
+	  do cp -a $${DIR} ./debian/$(PACKAGE)/usr/share/$(PACKAGE); \
+	done

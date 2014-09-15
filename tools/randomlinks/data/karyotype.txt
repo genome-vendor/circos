@@ -1,1 +1,0 @@
-../../orderchr/data/karyotype.txt

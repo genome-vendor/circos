@@ -1,0 +1,11 @@
+circos0.66 (0.66-1) unstable; urgency=low
+
+  * Update to 0.66
+
+ -- Matthew Callaway <mcallawa@genome.wustl.edu>  Mon, 15 Sep 2014 18:22:59 +0000
+
+circos0.64 (0.64-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Matthew Callaway <mcallawa@genome.wustl.edu>  Wed, 23 Oct 2013 09:57:29 -0500

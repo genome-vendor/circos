@@ -1,0 +1,16 @@
+# Oryza sativa Msu Release 7 PlantGDB v187 22 Feb 2012
+# http://www.plantgdb.org/OsGDB/
+chr - os1 1 0 43,270,923 black
+chr - os2 2 0 35,937,250 black
+chr - os3 3 0 36,413,819 black
+chr - os4 4 0 35,502,694 black
+chr - os5 5 0 29,958,434 black
+chr - os6 6 0 31,248,787 black
+chr - os7 7 0 29,697,621 black
+chr - os8 8 0 28,443,022 black
+chr - os9 9 0 23,012,720 black
+chr - os10 10 0 23,207,287 black
+chr - os11 11 0 29,021,106 black
+chr - os12 12 0 27,531,856 black
+chr - os13 13 0 633,585	black
+chr - os14 14 0 592,136	black
