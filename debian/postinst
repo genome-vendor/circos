@@ -18,7 +18,7 @@ set -e
 # the debian-policy package
 
 
-VERSION=0.64
+VERSION=0.66
 PRIORITY=50
 BASEPATH="/usr/share/circos${VERSION}/bin"
 EXECUTABLES="circos gddiag"
